@@ -1,0 +1,26 @@
+# ---- .NET build output ----
+bin/
+obj/
+publish/
+out/
+*.binlog
+
+# ---- Visual Studio / Rider / VS Code per-user state ----
+.vs/
+.vscode/
+.idea/
+*.user          # *.csproj.user – per-user build/debug preferences
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# ---- Local test / scratch artifacts (created by manual verification runs) ----
+_*test*/
+
+# ---- OS cruft ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- IDE / assistant scratch (not part of this project) ----
+.github/copilot-instructions.md

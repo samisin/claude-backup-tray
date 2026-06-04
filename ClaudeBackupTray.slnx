@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\ClaudeBackupTray\ClaudeBackupTray.csproj" />
+  </Folder>
+  <Folder Name="/install/">
+    <File Path="install\Install.ps1" />
+    <File Path="install\Uninstall.ps1" />
+  </Folder>
+  <Folder Name="/solution items/">
+    <File Path="README.md" />
+  </Folder>
+</Solution>
