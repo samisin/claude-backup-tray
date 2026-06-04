@@ -15,7 +15,7 @@
 
 > **Why?** Claude Code deletes local transcripts after `cleanupPeriodDays` (default **30 days**) at
 > startup — sometimes even when the setting has been raised. This app is the safety net: an
-> independent, **versioned** copy on a **separate disk**, taken on a schedule and at startup, with a
+> independent, **versioned** copy, taken on a schedule and at startup, with a
 > colour-coded tray icon and a Windows notification the moment something goes wrong.
 
 ---
@@ -143,7 +143,7 @@ save — the schedule reloads live. To remove everything:
 |-----|---------|
 | `ScriptPath` | Path to the backup script. Relative paths resolve against the app folder. |
 | `PowerShellExe` | `pwsh.exe`, `powershell.exe`, or a full path. Falls back to Windows PowerShell. |
-| `TargetRoot` | Backup root. **Should be a different disk or network location** than the sources. |
+| `TargetRoot` | Backup folder. |
 | `Sources` | Source folders to copy. `%ENVIRONMENT_VARIABLES%` are expanded. |
 | `Schedule` | Cron (Cronos). 5 fields = minutes, 6 fields = with seconds. Local time. |
 | `RunOnStartup` | Back up immediately at app start, in addition to the schedule. Default `true`. |
